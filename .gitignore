@@ -1,0 +1,26 @@
+# Python関連
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.venv
+venv/
+ENV/
+
+# IDE関連
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 認証情報
+credentials.json
+token.pickle
+
+# プロジェクトデータ
+data/
+*.log
+
+# システムファイル
+.DS_Store
+Thumbs.db

@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "taskmanageeragent"
+version = "0.1.0"
+description = ""
+authors = ["myksyut <shota.miyaki@emuniinc.jp>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+google-api-python-client = "^2.161.0"
+pydantic = "^2.10.6"
+pydantic-settings = "^2.7.1"
+google-auth-oauthlib = "^1.2.1"
+google-auth-httplib2 = "^0.2.0"
+pyyaml = "^6.0.2"
+pytz = "^2025.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
