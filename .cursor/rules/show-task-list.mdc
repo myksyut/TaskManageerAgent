@@ -1,0 +1,9 @@
+---
+description: タスクの一覧表示
+globs: ./tools/ui_tasks_list.py
+---
+### タスク一覧の表示
+- 「タスク一覧を表示してください」のような指示があった時のみ実施
+- ユーザーにタスクを確認してもらうために使用します
+- ./tools/ui_tasks_list.pyを実行してstremlitのuiを表示
+- poetry run streamlit run tasks/ui_tasks_list.pyを実行

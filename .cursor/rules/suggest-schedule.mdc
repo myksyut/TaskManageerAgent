@@ -1,0 +1,25 @@
+---
+description: スケジュールの提案
+globs: ./data, ./tool/get_calendar.py, 
+---
+### スケジュールの提案
+- 「スケジュールを作成して」のような指示があった時のみ実施
+- 今日のスケジュールをget_calendar.pyを実行して取得してください
+- また./data/tasks.yamlを読んで持ちタスクを把握してください
+- 優先度を考慮してください
+- .data/schedule内にYYYYMMDD.yaml(今日の日付)を作成
+- 作成したファイルに提案したスケジュールを以下のyaml形式で追加
+- 稼働時間は10:00から22:00までです．
+- 現在時刻を考慮してください
+- 土日は基本，優先度が高く，期限が迫っているタスクのみです
+- 作成したスケジュールはユーザーに確認してください
+
+- yaml形式
+schedules:
+  - id: string                    # タスクの一意の識別子
+    title: string                 # タスクのタイトル
+    description: string           # タスクの詳細な説明
+    status: string                # タスクの状態（未着手/進行中/完了/延期）
+    priority: number              # 優先度（1-5，数字が大きいほど優先度高）
+    category: string              # タスクのカテゴリ
+    duration: string              #何時から何時までの予定

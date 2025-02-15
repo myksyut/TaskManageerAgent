@@ -1,0 +1,21 @@
+---
+description: タスクの保存
+globs: ./data/tasks, ./tools/get_calendar.ppy
+---
+### タスクの保存
+- ユーザーからの入力を受け取りタスクを分析して./data/tasks.yamlに追加
+- yamlを書くにあたり必須情報が不足している場合はユーザーに不足情報の補足をしてもらうよう促します
+- 必須情報はタイトル，説明，期限，カテゴリ，優先度です．
+- 今日の日付を./tools/get_todays_date.pyを実行して取得してください
+
+- yaml形式
+tasks:
+  - id: string                    # タスクの一意の識別子
+    title: string                 # タスクのタイトル
+    description: string           # タスクの詳細な説明
+    status: string                # タスクの状態（未着手/進行中/完了/延期）
+    priority: number              # 優先度（1-5，数字が大きいほど優先度高）
+    category: string              # タスクのカテゴリ
+    created_at: datetime          # タスク作成日時
+    due_date: datetime           # 期限
+    estimated_hours: number      # 見積もり時間
